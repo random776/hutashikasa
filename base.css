@@ -1,0 +1,39 @@
+@charset "UTF-8";
+body{
+    font-family: "游ゴシック Light", sans-serif;
+    margin: 50px;
+    background-color: rgb(241, 239, 175);
+}
+
+#box {
+    padding: 10px;
+    border: 2px solid rgb(0, 80, 33);
+    border-radius: 0px;
+    color: rgb(249, 255, 237);
+    background-color: rgb(9, 141, 126);
+}
+
+#under {
+    height: 10px;
+    background-color: rgb(227, 157, 19);
+}
+
+h1 {
+    font-size: 1.7rem;
+}
+
+input {
+        height: 20px;
+        width: 40px;
+        margin: 5px;
+        border-radius: 3px;
+        font-size: 15px;
+        text-align: center;
+}
+button {
+    height: 20px;
+    width: 40px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: rgb(4, 255, 0);
+  }

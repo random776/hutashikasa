@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" async 
+          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <title>不確かさの伝播則の計算ツール</title>
+    <link rel="stylesheet" href="./base.css">
+  </head>
+  <body>
+    <h1>不確かさの伝播則の計算ツール</h1>
+    <div id="box">
+      <p>不確かさの伝播則とは？</p>
+      <p>「実験標準偏差」と合わせて、東京大学の理系生全員が学ぶ「基礎物理学実験」でなぜか必須となる値である。</p>
+      <p>（それが何なのかの説明は、基礎実験の授業で扱うので省略）</p>
+      <p>例えば、測定結果 \(\omega\) が、次のような直接測定値のべき乗で表せるとする。（ただし\(C\)は定数）</p>
+      \begin{align}
+      \omega = Cx^ay^bz^c
+      \end{align}
+      <p>全体の不確かさ \(\delta_\omega\) は、それぞれの変数の不確かさ\(\delta_x\), \(\delta_y\), \(\delta_z\) とを用いて、次のように表せる。</p>
+      \begin{align}
+      \delta_\omega = \sqrt{a \left({\frac{\delta_x}{x}}\right)^2 + b \left({\frac{\delta_y}{y}}\right)^2 + c \left({\frac{\delta_z}{z}}\right)^2}
+      \end{align}
+    </div>
+    <div id="under"></div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <small>
+      Copyright(c) 2023 @東京大学駒場キャンパス ランゲルハンス棟 All Rights
+      Reserved.
+    </small>
+  </body>
+</html>
