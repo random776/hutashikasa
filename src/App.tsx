@@ -11,11 +11,6 @@ function App() {
   const [result, setResult] = useState(0);
   const [omega, setOmega] = useState(0);
 
-  const setNewOmega = () => {
-    setOmega(omega);
-    console.log(omega);
-  };
-
   const setNewContents = () => {
     setContents([
       ...contents,
@@ -40,10 +35,6 @@ function App() {
             setOmega(parseFloat(e.target.value));
           }}
         />
-        <button type="button" key={"ボタン0"} onClick={setNewOmega}>
-          登録
-        </button>
-        <span>ここを最初に入力して「登録」ボタンを押してください。</span>
       </p>
       <p>
         次数：
