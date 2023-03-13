@@ -71,9 +71,9 @@ function App() {
             <p>
               <span>データ{content.id}</span>
             </p>
-            <span> 次数：{content.var1} </span>
-            <span> 変数値：{content.var2} </span>
-            <span> 不確かさ：{content.var3} </span>
+            <span className="p"> 次数：{content.var1} </span>
+            <span className="p"> 変数値：{content.var2} </span>
+            <span className="p"> 不確かさ：{content.var3} </span>
           </li>
         ))}
       </ul>
